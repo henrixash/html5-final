@@ -130,6 +130,11 @@ footer {
     text-shadow: 1px 1px 4px #000000;
   }
 
+footer table {
+    table-layout: auto;
+    width: 100%;
+}
+
   section::after {
     content: "";
     display: table;
