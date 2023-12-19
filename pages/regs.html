@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Register</title>
+		<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../styles.css"/>
+	<script src="../pages/js/jquery.js"></script>
+	</head>
+<body>
+	<header>
+        <h1>Welcome to College of Business Education</h1>
+     </header>
+     
+     <section>
+       <a name="top">
+       <nav>
+		<h3 class="menuTxt">Menu</h3>
+         <ul class="navhover">
+           <li><a href="../index.html#top" >Home</a></li>
+           <li><a href="about.html#top">About</a></li>
+           <li><a href="history.html#top">History</a></li>
+          <li><a href="news.html#top">News</a></li>
+          <li><a href="programs.html#top">Programs Offered</a></li>
+          <li><a href="orgs.html#top">Student Organizations</a></li>
+          <li><a href="../index.html#map">NVSU Map</a></li>
+         </ul>
+         <br>
+         <ul class="navhover">
+           <li><a href="#top">Register</a></li>
+           <li><a href="../pages/login.html#top">Login</a></li>
+         </ul>
+       </nav>
+	<article>
+	<form>
+		<table class="centertable">
+			<tr>
+				<th colspan="2"><img id="preview" src="../images/user.png" width="250" height="250"/>
+					<br>
+					<input type="file" id="uploadimg" name="mypic" onchange="previewFile(this);" hidden/>
+				
+					<button type="button" class="btn" onclick="document.getElementById('uploadimg').click();" >Upload image</button><br><br>
+				
+					</th>
+			</tr>
+			<tr>
+				<td><label>First Name</label></td>
+				<td><label>Last Name</label></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="fname" placeholder="Enter your First Name here!" required></td>
+				<td><input type="text" name="lname" placeholder="Enter your Last Name here!" required></td>
+
+			</tr>
+			<tr>
+				<td><label>Gender: </label><input type="radio" name="gender" value="female"><label>Female</label>
+				<input type="radio" name="gender" value="Male"><label>Male</label></td>
+				<td><label>Age: </label><input type="range" id="rangeInput" min="18" max="50" name="age" oninput="updateValue()"/>
+					<span id="displayValue">50</span></td>
+			</tr>
+			<tr>
+				<td><label>Course</label>
+					<select>
+					<option disabled selected>Select your Course</option>
+					<option>BSCS</option>
+					<option>BSIT</option>
+					<option>BSIS</option>
+					</select>
+				</td>
+				<td><label>Phone Number</label><input type="phone" name="cp" required/></td>
+			</tr>
+			<tr>
+				<td colspan="2"><label>Address</label><textarea cols="60" rows="5"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2"><label>Username</label><input type="text" name="uname"></td>
+			</tr>
+			<tr>
+				<td><label>Password</label><input type="password" name="pwd" required/></td>
+				<td><label>ReEnter Password</label><input type="password" name="pwd" required/></td>
+			</tr>
+		</table>
+
+		<div class="btnCenter">
+			<input type="submit" class="btn" value="Register"/>
+		<input type="reset" class="btn" value="Clear"/>	
+		</div>
+
+	</form>
+	</article>
+</section>
+<footer style="display: flex; list-style-type: none;">
+	<table>
+		<tr>
+			<td>
+				<img src="../images/cbelogo.png" height="180px" width="180px">
+			</td>
+			<td>
+				<ul>
+					<li><p><b>Nueva Vizcaya State University</b></p></li>
+					<li><img src="../icons/location.png" height="15px" width="15px"> Bayombong, Nueva Vizcaya, Philippines 3700 <br></li>
+					<li> <img src="../icons/phone-call.png" height="15px" width="15px"> <a href="tel:(078) 392-1111 ">(078) 392-1111 </a><br></li>
+					<li><img src="../icons/email.png" height="15px" width="15px"> <a href="mailto:info@nvsu.edu.ph">info@nvsu.edu.ph</a><br></li>
+					<li> <img src="../icons/fbFooter.png" height="15px" width="15px"> <a href="https://www.facebook.com/nvsu1916">NVSU Official Facebook Page</a><br></li>
+					<li><img src="../icons/domain.png" height="15px" width="15px"> <a href="https://nvsu.edu.ph/">NVSU Official Website</a></li>
+				</ul>
+			</td>
+
+			<td style="padding-left: 100px;">
+				<p>
+					<b>Web Developer:</b><br> Nava, Patrick
+				</p>
+				<br>
+				<p> 
+					<i>This website is made for academic purposes only. <br> ITT1-1 - Webpage Design Using HTML5 </i>
+				</p>
+			</td>
+		</tr>
+	</table>
+</footer>
+	<script>
+		function previewFile(input){
+			 var file = $("input[type=file]").get(0).files[0];
+			 if(file){
+				 var reader = new FileReader();
+				 reader.onload = function(){
+					 $("#preview").attr("src", reader.result);
+				 }
+				 reader.readAsDataURL(file);
+			 }
+		 }
+	 </script>
+	 
+	 <script>
+			 function updateValue() {
+				 const rangeInput = document.getElementById("rangeInput");
+				 const displayValue = document.getElementById("displayValue");
+	 
+				 displayValue.textContent = rangeInput.value;
+			 }
+	</script>
+</body>
+</html>

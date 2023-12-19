@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+ <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <title>HOME</title>
+</head>
+<body>
+    <header>
+       <h1>Welcome to College of Business Education</h1>
+     </header>
+     
+     <section>
+       <a name="top">
+       <nav>
+         <h3 class="menuTxt">Menu</h3>
+         <ul class="navhover">
+           <li><a href="#top" >Home</a></li>
+           <li><a href="pages/about.html#top">About</a></li>
+           <li><a href="pages/history.html#top">History</a></li>
+          <li><a href="pages/news.html#top">News</a></li>
+          <li><a href="pages/programs.html#top">Programs Offered</a></li>
+          <li><a href="pages/orgs.html#top">Student Organizations</a></li>
+          <li><a href="#map">NVSU Map</a></li>
+         </ul>
+         <br>
+         <ul class="navhover">
+           <li><a href="pages/regs.html#top">Register</a></li>
+           <li><a href="pages/login.html#top">Login</a></li>
+         </ul>
+       </nav>
+       <article>
+        <h1>Be One Of The Pythons!</h1>
+                    <p>College of Business Education Offers 2 Undergraduate Programs and Graduate Programs</p>
+        <div id="banner">
+            <div class="section">
+                <img  src="images/businessadministration1.jpg"  hspace="10">
+                <div class="description">
+                    <p>Bachelor of Sciences in Business Administration</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <img  src="images/agribusiness1.jpg"  hspace="10">
+                <div class="description">
+                    <p>Bachelor of Science in Agribusiness</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <a href="pages/programs.html#top"><img src="icons/right-arrow.png"></a>
+                <div class="description">
+                    <a href="pages/programs.html#top">See more on Programs Offered</a>
+                </div>
+            </div>
+        </div>
+        </article>
+       <article>
+        <hr>
+        <h1>College News</h1>
+
+        <div id="banner">
+            <div class="section">
+                <img src="images/news1.jpg">
+            <h3>Bravo, CBEshies!</h3>
+            <p style="text-align: justify; text-indent: 25px;">At the recently conducted college - based ENTABLADO, the CBEshies
+                gave a standing ovation worthy talents. From performing arts up to the
+                literary events, the College of Business Education have it all. <a href="pages/news.html#bravo">Read More...</a></p>
+            </div>
+
+            <div class="section">
+                <img src="images/news2.jpg">
+                <h3>CBE Teacher's Day Program</h3>
+            <p style="text-align: justify; text-indent: 25px;">The College of Business Education held its Teachers'
+                Day program filled with gratitude towards our amazing educators. <a href="pages/news.html#cbe">Read More...</a></p>
+            </div>
+        </div>
+        <a class="btp" href="#top">Back to Top</a>
+       </article>
+
+       
+       <article>
+        <a name="map"></a>
+        <h1 class="title">Map Locator</h1>
+        <div id="map">
+        </div><br>
+      </article>
+      <article>
+        <a class="btp" href="#top">Back to Top</a>
+      </article>
+      
+    </section>
+       <footer>
+            <table>
+                <tr>
+                    <td>
+                        <img src="images/cbelogo.png" height="180px" width="180px">
+                    </td>
+                    <td>
+                        <ul>
+                            <li><p><b>Nueva Vizcaya State University</b></p></li>
+                            <li><img src="icons/location.png" height="15px" width="15px"> Bayombong, Nueva Vizcaya, Philippines 3700 <br></li>
+                            <li> <img src="icons/phone-call.png" height="15px" width="15px"> <a href="tel:(078) 392-1111 ">(078) 392-1111 </a><br></li>
+                            <li><img src="icons/email.png" height="15px" width="15px"> <a href="mailto:info@nvsu.edu.ph">info@nvsu.edu.ph</a><br></li>
+                            <li> <img src="icons/fbFooter.png" height="15px" width="15px"> <a href="https://www.facebook.com/nvsu1916">NVSU Official Facebook Page</a><br></li>
+                            <li><img src="icons/domain.png" height="15px" width="15px"> <a href="https://nvsu.edu.ph/">NVSU Official Website</a></li>
+                        </ul>
+                    </td>
+
+                    <td style="padding-left: 100px;">
+                        <p>
+                            <b>Web Developer:</b><br> Nava, Patrick
+                        </p>
+                        <br>
+                        <p> 
+                            <i>This website is made for academic purposes only. <br> ITT1-1 - Webpage Design Using HTML5 </i>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+      </footer>
+      <script src="pages/js/map.js"></script>
+</body>
+</html>
